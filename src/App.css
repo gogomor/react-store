@@ -1,0 +1,40 @@
+.item-box {
+  border: 1px solid gray;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.item-box img {
+  width: 200px;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightskyblue;
+}
+.items-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  
+}
+
+.buy-item-container{
+  display: flex;
+  justify-content: center;
+  
+}
+.buy-item-container input{
+  text-align: center;
+  width:70px;
+}
+footer{
+  display:flex;
+  justify-content: center;
+  height: 40px;
+  background-color: #97ccf8;
+}
