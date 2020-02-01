@@ -3,6 +3,7 @@ import "./App.css";
 import { storeProducts } from "./data.js";
 import Item from "./Item.js";
 import Logo from "./logo.svg";
+import { Route } from "react-router-dom";
 
 class App extends React.Component {
   constructor() {
@@ -56,11 +57,14 @@ class App extends React.Component {
     ));
     return (
       <div className="App">
-        <div className="header">
+        <nav className="header">
           <img src={Logo} alt="" />
           <h3>Products</h3>
-          <h3>My cart: {this.state.total}$</h3>
-        </div>
+          <h3>Cart total: <span>{this.state.total}$</span></h3>
+          <div>
+          <img src="img/cart.png" alt="img here" ></img>
+          </div>
+        </nav>
         <div className="items-container">{Items}</div>
         <footer><p>by gogomor</p></footer>
       </div>

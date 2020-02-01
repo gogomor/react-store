@@ -7,10 +7,14 @@
 .item-box img {
   width: 200px;
 }
-.header {
+nav {
   display: flex;
   justify-content: space-evenly;
   background-color: lightskyblue;
+  align-items: center;
+}
+nav span {
+  margin-left: 15px;
 }
 .items-container {
   width: 90%;
